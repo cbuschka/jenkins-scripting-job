@@ -1,8 +1,6 @@
 @Library("mylib")
 
-pipeline {
- agent any
-
+node  {
  stages {
   stage('Build') {
   steps {
