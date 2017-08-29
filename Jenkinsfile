@@ -12,6 +12,12 @@ node {
     },
     "b": {
          lib.sayHello()
+    },
+    "c": {
+         lib.sayHello()
+    },
+    "d": {
+         lib.sayHello()
     }
   )
  }
