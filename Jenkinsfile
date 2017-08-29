@@ -6,7 +6,13 @@ def lib = new Lib()
 
 node {
  stage("step #1") {
-  lib.sayHello()
-  sh 'echo "hello"'
+  parallel(
+    "a": {
+         lib.sayHello()
+    },
+    "b": {
+         lib.sayHello()
+    }
+  )
  }
 }
