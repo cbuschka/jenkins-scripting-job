@@ -1,4 +1,10 @@
 @Library("mylib")
 
+import com.github.cbuschka.jenkins_scripting_library.Lib
+
+def lib = new Lib()
+
 stage("step #1") {
+  lib.sayHello()
+  sh 'echo "hello"'
 }
