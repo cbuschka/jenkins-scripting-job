@@ -1,4 +1,4 @@
 @Library("mylib")
 
-pipeline {
+stage("step #1") {
 }
